@@ -8,7 +8,7 @@
 [name]="player" class="player-position" 
 [ngStyle]="{'top.px': 100 + (i * 90)}"></app-player>
 
-<div class="field">
+<div class="field" [style.background-image]="'url(./assets/img/board.jpg)'" >
 
     <div class="card-stack">
         <img [ngStyle]="{'right.px': i*5}" *ngFor="let c of [0,1,2,3]; let i = index;" src="assets/img/cards/card_cover.png" alt="">
